@@ -60,6 +60,39 @@
             color: white;
             flex-grow: 0.8;
         }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+
+            .main {
+                flex-wrap: wrap;
+            }
+
+            .main>nav {
+                flex-basis: 100%;
+                height: 10vh;
+                display: flex;
+            }
+
+            .main>article {
+                min-height: 80vh;
+            }
+
+            header {
+                min-height: 15vh;
+            }
+
+            footer {
+                min-height: 15vh;
+            }
+        }
+
+        @media (max-width: 575px) {
+
+            .main {
+                flex-direction: column;
+                flex-grow: 3;
+            }
+        }
     </style>
 </head>
 
